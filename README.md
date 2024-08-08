@@ -2,7 +2,7 @@
 
 Welcome to the Radam Gaming Solution repository! This project is a simple HTML and CSS-based gaming solution platform with various features and functionalities.
 
-![Radam Gaming Solution](images/screenshot.png)
+![Radam Gaming Solution](images/radam1.png)
 
 ## Table of Contents
 
@@ -48,8 +48,8 @@ Here are some screenshots of the project:
 
 ### Home Page
 
-![Home Page](images/home.png)
+![Home Page](images/radam1.png)
 
 ### Game Showcase
 
-![Game Showcase](images/games.png)
+![Game Showcase](images/radam2.png)
