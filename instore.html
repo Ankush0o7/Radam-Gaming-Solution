@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Store Purchase</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .storelogin{
+            border: 3px solid;
+            text-align: center;
+        }
+        .instoreform{
+            border: 3px solid;
+            margin-bottom: 1%;
+            padding: 1%;
+        }
+        .inlinelogin{
+            display: flex;
+            flex-direction: column;
+            margin-top: 3%;
+            margin-bottom: 5%;
+        }
+        body{
+            color: white;
+    text-align: center;
+                        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./images/front.webp);
+    background-size: cover;
+    background-position: center;
+        }
+        #inlineloginbtn{
+            text-align: right;
+        }
+        .instoreformitem{
+            margin-top: 3%;
+            margin-bottom: 2%;
+        }
+        @media (max-width: 470px) {
+          .instoreformitem{
+            display: flex;
+              flex-direction: column;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+            <h1 class="logo">RADAM <span>GAMING</span> </h1>
+          <ul>
+                <li class="navbar-toggle"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                <li class="navbar-links"><a href="homepage.html">Home</a></li>
+                <li class="navbar-links"><a href="games.html">Products</a></li>
+                <li class="navbar-links"><a href="instore.html">Instore purchase</a></li>
+                <li class="navbar-links"><a href="redeem.html">Redeem</a></li>
+                <li class="navbar-links"><a href="login.html">Sign in</a></li>
+                <li class="navbar-links"><a href="Buy_page.html"><i class="fa fa-cart-arrow-down"></i></a></li>
+                <li class="navbar-links"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+        </nav>
+
+    <main>
+    <section class="storelogin">
+        <form action="post">
+            <h1>Employee Log In</h1>
+            <article class="inlinelogin">
+            Employee Id:<br><input type="text" name="text"><br>
+            Password:<br><input type="password" name="password"><br>
+                <a href="#">Forgotten account?</a><br>
+            <button>Log In</button>
+            </article>
+        </form>
+    </section>
+    
+    <section class="instoreform">
+        
+        <h2>Enter the item id of product purchased and quantity for that item</h2>
+        <form class="instoreformitem" action="post">
+            Item Id: <input type="text" name="text">
+            Quantity: <input type="text" name="text"><br><br>
+            Item Id: <input type="text" name="text">
+            Quantity: <input type="text" name="text"><br><br>
+            Item Id: <input type="text" name="text">
+            Quantity: <input type="text" name="text"><br><br>
+            Item Id: <input type="text" name="text">
+            Quantity: <input type="text" name="text"><br><br>
+        </form>
+                    <button>Add another product?</button>
+            <button>Check Out</button>
+    </section>
+    </main>
+       <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h1 class="logo">RADAM <br><span>GAMING</span> </h1>
+                    
+                    <!-- <li><a href=""><i id="facebook" class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href=""><i id="twitter" class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i id="insta" class="fa-brands fa-instagram"></i></a></li> 
+                    <li><a href=""><i id="youtube" class="fa-brands fa-youtube"></i></a></li>  -->
+                    <i id="facebook" class="fa-brands fa-square-facebook"></i>
+                    <i id="twitter" class="fa-brands fa-twitter"></i>
+                    <i id="insta" class="fa-brands fa-instagram"></i>
+                    <i id="youtube" class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="footer-col">
+                     <ul>
+                        <li class="navbar-links"><a href=redeem.html>Redeem</a></li>&nbsp;
+                        <li class="navbar-links"><a href=Blog.html>Blog</a></li>&nbsp;
+                        <li class="navbar-links"><a href=about.html>About Us</a></li>&nbsp;
+                        <li class="navbar-links"><a href=about.html#Contact_us>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p>Subscribe Us</p>
+                    <input type="email" class="email" placeholder="Enter your email"><br>
+                    <button class="submit">Subscribe now</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

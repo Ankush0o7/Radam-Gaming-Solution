@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="./css/style.css"  rel="stylesheet">
+    <link href="./css/all.min.css" rel="stylesheet">
+    <style>
+        
+        a{
+            text-decoration: none;
+            color: white;
+            
+        }
+        #trendingimage{
+            max-height: 100%;
+            max-width: 100%;
+            margin-top: 2px;
+        }
+        body{
+            color: white;
+            text-align: center;
+                        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./images/front.webp);
+    background-size: cover;
+    background-position: center;
+        }
+        #head, #foot{
+            margin: 5px;
+            border: 1px solid;
+        }
+        p{
+            font-size: larger;
+        }
+        #trending{
+            margin-bottom: 50px;
+            margin-top: 8px;
+            place-content: center;
+            border: 1px solid;
+            display: flex;
+        }
+        .trending1,.trending2,.trending3,.trending4{
+            border: 1px solid;
+            margin: 5px;
+            width: 35%;
+            height: 33vh;
+            padding: 3%;
+
+        }
+        .trending1:hover{
+            transform: scale(1.3)
+        }
+        .trending2:hover{
+            transform: scale(1.3)
+        }
+        .trending3:hover{
+            transform: scale(1.3)
+        }
+        .trending4:hover{
+            transform: scale(1.3)
+        }
+            
+        #blog{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .break {
+            flex-basis: 100%;
+            flex-grow: 1;
+        }
+        .blogele{
+            color: antiquewhite;
+            border: 1px solid;
+            margin: 10px;
+            width: 45%;
+            height: 100%;
+            background-image: url(./images/5.jpeg);
+        }
+        #discussion{
+            float:right;
+            border: 1px solid;
+            margin: 0px;
+            width:35% ;
+            height: auto;
+        }
+        #foot{
+            margin-top: 50px;
+        }
+        .readmore{
+            float: right;
+            color: darkolivegreen;
+        }
+        .diss
+        {
+            border: 1px solid;
+            display: inline-flex;
+        }
+        .youcomment{
+        border: 1px solid;
+        }
+        .dissusername{
+            color: blue;
+        }
+        a.byusername{
+            color: blue;
+        }
+        
+        
+        @media (max-width: 1059px) {
+            #trending{
+                display: flex;
+                flex-direction: column;
+            }
+            #discussion{
+                display: none;
+            }
+            #blog{
+                display: flex;
+                flex-direction: column;
+            }
+            .trending1,.trending2,.trending3,.trending4{
+                width: 100%;
+            height: 100%;
+            }
+            .blogele{
+                width: 100%;
+                }
+
+
+    </style>
+</head>
+<body>
+        <nav>
+            <h1 class="logo">RADAM <span>GAMING</span> </h1>
+           <ul>
+                <li class="navbar-toggle"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                <li class="navbar-links"><a href="homepage.html">Home</a></li>
+                <li class="navbar-links"><a href="games.html">Products</a></li>
+                <li class="navbar-links"><a href="instore.html">Instore purchase</a></li>
+                <li class="navbar-links"><a href="redeem.html">Redeem</a></li>
+                <li class="navbar-links"><a href="login.html">Sign in</a></li>
+                <li class="navbar-links"><a href="Buy_page.html"><i class="fa fa-cart-arrow-down"></i></a></li>
+                <li class="navbar-links"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+        </nav>
+    <div id="main">
+        <h2 style="text-align: left;">Trending Topics</h2>
+        <div id="trending">
+            
+            <div class="trending1">
+                <h4>Top 10 treanding game of 2022 so far</h4>
+                <img id="trendingimage" src="./images/1.webp" alt="Top 10 games">
+                <form action="#">
+                    <button class="readmore">Read More</button>
+                </form>
+            </div>
+            <div class="trending2">
+                <h4>Hauntingly beautiful – why do scary games have such unique art styles?</h4>
+                <img id="trendingimage" src="./images/2.jpeg" alt="Scary game">
+                <form action="#">
+                    <button class="readmore">Read More</button>
+                </form>
+            </div>
+            <div class="trending3">
+                <h4>Ten fascinating fact you should know before playing witcher 2</h4>
+                <img id="trendingimage" src="./images/3.jpeg" alt="Witcher 2">
+                <form action="#">
+                    <button class="readmore">Read More</button>
+                </form>
+            </div>
+            <div class="trending4">
+                <h4>why you should play Alien: Isolation</h4>
+                <img id="trendingimage" src="./images/4.png" alt="alien isolation">
+                <form action="#">
+                    <button class="readmore">Read More</button>
+                </form>
+            </div>
+        </div>
+        <div id="discussion">
+            <h2 style="text-align: left; color: saddlebrown;">Live discussion</h2>
+            <div class="diss">
+                <span class="dissusername">@ankush4536: </span>
+                <p>Hi guys i having been play Spider Man: Miles Morales and i got stuck in level 4 of the game. Can anyone help me out</p>
+            </div>
+            <div class="diss">
+                <span class="dissusername">@rijan3546: </span>
+                <p>It so easy just go to the left hand room where you can find a tool to cut through the glass that will give you access into the hall and from there you can get out and complete the level.</p>
+            </div>
+            <div class="diss">
+                <span class="dissusername">@manjit4578: </span>
+                <p>There is another way to complete and i think that the easy way rather then searching tools inside a room you can purchase those tools in game store before starting that level.</p>
+            </div>
+            <div class="youcomment">
+            <label for="comment">Your comment:</label>
+            <textarea id="chatbox" name="chatbox" rows="5" cols="30" placeholder="Add a comment. use @ to mention a person and ! to link a pull request."></textarea>
+                <input type="submit" value="Submit">
+            </div>
+            
+        </div>
+        <div id="blog">
+            <div class="blogele">
+            <h3>Ten fascinating fact you should know before playing witcher 2</h3>
+                <a class="byusername" href="#">-BY RG Team</a>
+                <p style="margin-top: 2px;">A full decade has passed since the premiere of the second game of The Witcher series. Despite its long presence in our game libraries, The Witcher 2: Assassins of Kings can still surprise you in many ways. Here is a list of 10 things you might not have heard about this outstanding title.....</p>
+                <form action="#">
+                    <button class="readmore">Read More</button>
+                </form>
+            </div>
+            <div class="blogele"><h3>Return to the ultimate survival horror saga</h3>
+<a class="byusername" href="#">-BY RG Team</a>
+                <p style="margin-top: 2px;">From the emergence of the gruesome T-Virus to the grisly saga of the Baker family… we’ve joined forces with Capcom for a Resident Evil anthology for the ages!This expansive collection of iconic games from the legendary survival-horror series. With this bundle, you can also pick up a coupon to get 50% off Resident Evil ........</p>
+                <form action="#">
+                    <button class="readmore">Read More</button>
+                </form>
+            </div>
+            <div class="blogele"><h3>The story behind Metro 2033 and its grim</h3>
+                                <a class="byusername" href="#">-BY RG Team</a>
+           <p style="margin-top: 2px;"> If you’re an avid gamer, chances are you’ve heard of the first-person shooter series “Metro” based on the book series of the same name. They’re adored by critics and loved by their fans, and for good reason.
+                But what if you played the Metro games a while ago and can’t remember the synopses? What if you need a quick refresher .....</p>
+                <form action="#">
+                    <button class="readmore">Read More</button>
+                </form>
+            </div>
+            <div class="blogele">
+            <h3>why you should play Alien: Isolation</h3>
+                                <a class="byusername" href="#">-BY RG Team</a>
+            <p style="margin-top: 2px;">Since the premiere of the cult sci-fi horror Alien by Ridley Scott, there have been many attempts to adapt it into the video game form. Among these, Alien: Isolation from Creative Assembly and SEGA, remains one of the most successful. Let’s look at what makes this FPS game so unique and why you should give it a try.......</p>
+                <form action="#">
+                    <button class="readmore">Read More</button>
+                </form>
+            </div>
+
+            <div class="blogele"><h3>The Legendary Quake Is Over 25 Years Old</h3>
+                                <a class="byusername" href="#">-BY RG Team</a>
+            <p style="margin-top: 2px;">First-person shooters are one of the most iconic genres of video games, and Quake was one of the series that helped lead that charge. Developed by id Software in 1996, the game builds upon the studio’s previous title, Doom, and offers players an updated game on the all-new Quake engine...... </p>
+                <form action="#">
+                    <button class="readmore">Read More</button>
+                </form>
+            </div>
+            <div class="blogele"><h3>From Ultima to Dragon Age – here are fascinating RPGs to Lose Yourself In</h3>
+                                <a class="byusername" href="#">-BY RG Team</a>
+            <p style="margin-top: 2px;">Every gaming experience is unique. Some offer action-packed shoot-em-ups wrapped in 15-hour experiences. Others let sports fans experience the thrill of sinking a last-second buzzer-beater. And then there are role-playing games. Titles like Ultima ......</p>
+                <form action="#">
+                    <button class="readmore">Read More</button>
+                </form>
+            </div>
+            <div class="blogele"><h3>Hauntingly beautiful – why do scary games have such unique art styles?</h3>
+                                <a class="byusername" href="#">-BY RG Team</a>
+            <p style="margin-top: 2px;">Today, we’ve launched our special Halloween Sale. While looking through titles that can be classified as games perfectly fit for Halloween, we’ve noticed that many of them, besides being full of terrifying monsters, gloomy atmosphere or creepy gameplay mechanics ......</p>
+                <form action="#">
+                    <button class="readmore">Read More</button>
+                </form>
+            </div>
+            <div class="blogele"><h3>Wasteland: Everything to know about the hit apocalyptic RPG series</h3>
+                                <a class="byusername" href="#">-BY RG Team</a>
+            <p style="margin-top: 2px;">Gaming can provide a nearly limitless amount of experiences. If you are someone that prefers gritty atmospheres, action, and team-building, the Wasteland series should be near the top of your list for games to play.The original Wasteland was created in 1988 by Brian  .....</p>
+                <form action="#">
+                    <button class="readmore">Read More</button>
+                </form>
+            </div>
+            <button class="mid>button" style="margin-left: 50%;">Read More</button>
+        </div>
+</div>
+        
+        
+  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h1 class="logo">RADAM <br><span>GAMING</span> </h1>
+                    
+                    <!-- <li><a href=""><i id="facebook" class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href=""><i id="twitter" class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i id="insta" class="fa-brands fa-instagram"></i></a></li> 
+                    <li><a href=""><i id="youtube" class="fa-brands fa-youtube"></i></a></li>  -->
+                    <i id="facebook" class="fa-brands fa-square-facebook"></i>
+                    <i id="twitter" class="fa-brands fa-twitter"></i>
+                    <i id="insta" class="fa-brands fa-instagram"></i>
+                    <i id="youtube" class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                      <li class="navbar-links"><a href="#">Community</a></li>&nbsp;
+                        <li class="navbar-links"><a href=redeem.html>Redeem</a></li>&nbsp;
+                        <li class="navbar-links"><a href=Blog.html>Blog</a></li>&nbsp;
+                        <li class="navbar-links"><a href=about.html>About Us</a></li>&nbsp;
+                        <li class="navbar-links"><a href=about.html#Contact_us>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p>Subscribe Us</p>
+                    <input type="email" class="email" placeholder="Enter your email"><br>
+                    <button class="submit">Subscribe now</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

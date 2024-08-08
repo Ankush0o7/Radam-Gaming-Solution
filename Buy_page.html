@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy</title>
+    <link href="./css/style.css"  rel="stylesheet">
+    <link href="./css/all.min.css" rel="stylesheet">
+    <style>
+        table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}
+body{
+            color: white;
+    text-align: center;
+                        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./images/front.webp);
+    background-size: cover;
+    background-position: center;
+        }
+
+th,
+td {
+    padding: 20px;
+
+}
+        body{
+            text-align: center;
+        }
+        #head{
+             margin-bottom: 50px;
+            border: 1px solid;
+        }
+        #foot{
+            margin: 5px;
+            border: 1px solid;
+        }
+        p{
+            font-size: larger;
+        }
+        #cart{
+            width: 100%;
+            height: 100%;
+
+        }
+        .wholepage{
+            display: flex
+        }
+        .payment{
+            border: 1px solid;
+           padding-bottom: 3%;
+            width: 30%;
+            height: 100%;
+            text-align: left;
+            overflow: hidden;
+        }
+        #placeorder{
+            margin: 20px;
+            float: right;
+            width: 10%; 
+            color: palevioletred;
+        }
+        .orderbutton{
+            display: grid;
+            margin: 5px;
+            font-weight: bold;
+        }
+        #card,#paypal,#checking{
+           margin-top: 3%;
+            margin-bottom: 2%;
+        }
+        #cart img{
+            margin-top: 3%;
+            margin-bottom: -2%;
+        }
+        #foot{
+            text-align: center;
+            margin-top: 70px;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+        }
+        .payment_card{ 
+            margin: 0;
+        }
+        .checkin{
+            padding-left: 5%;
+        }
+        footer{
+            
+        }
+        @media (max-width: 500px) {
+            footer{
+                display: none;
+            }
+            .wholepage{
+                flex-direction: column;
+            }
+        }
+        
+            
+    </style>
+</head>
+<body>
+        <nav>
+            <h1 class="logo">RADAM <span>GAMING</span> </h1>
+          <ul>
+                <li class="navbar-toggle"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                <li class="navbar-links"><a href="homepage.html">Home</a></li>
+                <li class="navbar-links"><a href="games.html">Products</a></li>
+                <li class="navbar-links"><a href="instore.html">Instore purchase</a></li>
+                <li class="navbar-links"><a href="redeem.html">Redeem</a></li>
+                <li class="navbar-links"><a href="login.html">Sign in</a></li>
+                <li class="navbar-links"><a href="Buy_page.html"><i class="fa fa-cart-arrow-down"></i></a></li>
+                <li class="navbar-links"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+        </nav>
+    <div id="main">
+        <div class="wholepage">
+        
+        <table>
+    <thead>
+        <tr>
+            <th>Cart</th>
+            <th>Game Name</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img src="./images/6.webp" alt="gta v" width="30%" height="80%"></td>
+            <td>GTA V</td>
+            <td>$55.0</td>
+        </tr>
+        <tr>
+            <td><img src="./images/8.jpg" alt="GOW" width="30%" height="80%"></td>
+            <td>God Of War: ragnarok</td>
+            <td>$99.0</td>
+        </tr>
+        <tr>
+            <td><img src="./images/7.jpg" alt="RDR 2" width="30%" height="80%"></td>
+            <td>Red Dead Redemption 2</td>
+            <td>$25.0</td>
+        </tr>
+        <tr>
+            <td><img src="./images/9.jpg" alt="last of us" width="30%" height="80%"></td>
+            <td>Last of us</td>
+            <td>$35.0</td>
+        </tr>
+        <tr>
+            <td><img src="./images/10.jpg" alt="fifa 23" width="30%" height="80%"></td>
+            <td>Fifa 23</td>
+            <td>$14.99</td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td><strong>Total</strong></td>
+            <td><strong>$228.99</strong></td>
+        </tr>
+        
+
+    </tbody>
+</table>
+            <div id="cart">
+            
+            <div class="payment"><strong>Payment Method</strong><br>
+                <div class="card">
+                    <div class="payment_card">
+                    <input type="radio" id="card" name="card" value="Card">
+                    <label for="Card">Card</label>
+                    <img src="./images/11.png" alt="card" width="50%" height="10%">    
+                </div>
+                <div class="payment_card">
+                    <input type="radio" id="paypal" name="paypal" value="PayPal">
+                    <label for="paypal">PayPal</label>
+                    <img src="./images/12.png" alt="paypal" width="20%" height="5%">
+                </div>
+                <div class="payment_card">
+                    <input type="radio" id="checking" name="checking" value="Checking">
+                    <label for="Checking">Checking</label>
+                    <i class="fa-sharp fa-solid fa-building-columns"></i>  
+                </div>
+                </div>
+            </div>
+        </div> 
+        </div>
+
+        <div id="placeorder">
+            <div class="orderbutton">
+            <form action="#">
+                    <button>Place order</button>
+                </form></div>
+        </div>
+        </div>
+        
+  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h1 class="logo">RADAM <br><span>GAMING</span> </h1>
+                    
+                    <!-- <li><a href=""><i id="facebook" class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href=""><i id="twitter" class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i id="insta" class="fa-brands fa-instagram"></i></a></li> 
+                    <li><a href=""><i id="youtube" class="fa-brands fa-youtube"></i></a></li>  -->
+                    <i id="facebook" class="fa-brands fa-square-facebook"></i>
+                    <i id="twitter" class="fa-brands fa-twitter"></i>
+                    <i id="insta" class="fa-brands fa-instagram"></i>
+                    <i id="youtube" class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li class="navbar-links"><a href=redeem.html>Redeem</a></li>&nbsp;
+                        <li class="navbar-links"><a href=Blog.html>Blog</a></li>&nbsp;
+                        <li class="navbar-links"><a href=about.html>About Us</a></li>&nbsp;
+                        <li class="navbar-links"><a href=about.html#Contact_us>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p>Subscribe Us</p>
+                    <input type="email" class="email" placeholder="Enter your email"><br>
+                    <button class="submit">Subscribe now</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
